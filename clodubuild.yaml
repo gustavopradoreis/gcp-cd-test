@@ -1,0 +1,11 @@
+steps:
+# step 1 - install dependencies
+- name: 'gcr.io/cloud-builders/npm'
+  args: ['install']
+# step 2 - tests with jest
+- name: 'gcr.io/cloud-builders/npm'
+  args: ['test']
+# step 3 - deploy into app engine
+- name: "gcr.io/cloud-builders/gcloud"
+  args: ["app", "deploy"]
+timeout: "1600s"

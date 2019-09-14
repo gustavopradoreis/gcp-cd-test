@@ -25,7 +25,3 @@ npm test
 ```
 gcloud app deploy
 ```
-
-## Deploying to App Engine
-
-Check out to the tutorial (link tbd)
